@@ -26,7 +26,7 @@
     <center>
         <h2 style="font-size: 35px;">Athey</h2>
     </center>
-    <img width="500" src="/images/athey.jpg" alt="Athey">
+    <img width="500" src="/static/images/athey.jpg" alt="Athey">
 
     <center>
         <h2 style="font-size: 40px;">audios</h2>
@@ -40,9 +40,9 @@
 
     <h2>continue</h2>
     <audio controls>
-        <source src="/audios/daoxiang.mp3" type="audio/mpeg">
-        <source src="/audios/faruxue.mp3" type="audio/mpeg">
-        <source src="/audios/aidefeixing.mp3" type="audio/mpeg">
+        <source src="/static/audios/daoxiang.mp3" type="audio/mpeg">
+        <source src="/static/audios/faruxue.mp3" type="audio/mpeg">
+        <source src="/static/audios/aidefeixing.mp3" type="audio/mpeg">
     </audio>
     <center>
         <h2 style="font-size: 40px;">video</h2>
@@ -50,11 +50,11 @@
 
     <h3>kobe</h3>
     <center>
-        <video width="900" controls src="/videos/kebo.mp4"></video>
+        <video width="900" controls src="/static/videos/kebo.mp4"></video>
     </center>
     <h3>HDR10</h3>
     <center>
-        <video width="900" controls src="/videos/HDR10.mp4"></video>
+        <video width="900" controls src="/static/videos/HDR10.mp4"></video>
     </center>
 
     <center>
@@ -117,6 +117,24 @@
         </li>
         <li>作业</li>
     </ol>
+    
+    <pre>
+    queue&lt;BiTreeNode*&gt; q;
+    BiTreeNode* tmp = NULL;
+    q.push(root);
+    while (!q.empty())
+    {
+        tmp = q.front();
+        q.pop();
+        printf("%c", tmp->data);
+        if (tmp->left != NULL)
+            q.push(tmp->left);
+        if (tmp->right != NULL)
+            q.push(tmp->right);
+    } 
+    </pre>
+
+
 
 </body>
 
