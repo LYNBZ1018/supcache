@@ -1,0 +1,78 @@
+.user-card {
+    width: 200px;
+    height: 67.49px;
+    background-color: #D9EAF7;
+    border-radius: 3px;
+    padding: 5px 6px 7px 7px;
+    box-sizing: border-box;
+    position: relative;
+
+    float: right;
+}
+
+.user-card-head {
+    font-size: 12px;
+    color: #6A737C;
+    margin: 1px 0px 4px 0px;
+}
+
+.user-card-head-get-time {
+    width: 200px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #6A737C;
+    margin: 1px 0px 4px 0px;
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+}
+
+.user-card-body-photo>img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+}
+
+.user-card-body-photo {
+    float: left;
+}
+
+.user-card-body-info {
+    float: left;
+    margin-left: 8px;
+}
+
+.user-card-body-info-username {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 2px;
+}
+
+.user-card-body-info-username>a {
+    font-size: 13px;
+    color: #0074CC;
+    text-decoration: none;
+}
+
+.user-card-body-info-username:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.user-card-body-info-reputation {
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #838C95;
+}
+
+.user-card-body-info-reputation-item {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px 0 2px;
+    position: relative;
+    top: -1px;
+}
