@@ -115,3 +115,17 @@ h1 {
     position: absolute;
     right: 50px;
 }
+
+.homework {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 5px 10px 5px;
+    background-color: #DB3A42;
+    color: #F2B799;
+    box-sizing: content-box;
+    border: #E7B21E 3px solid;
+}
