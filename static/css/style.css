@@ -21,6 +21,7 @@
     text-align: center;
     background-color: #4170A8;
     color: #E5C5B0;
+    border-radius: 3px;
     position: relative;
     bottom: 3px;
 }
@@ -52,7 +53,7 @@
     display: inline-block;
     color: #0074CC;
     background-color: #D9EAF7;
-    border-radius: 4%;
+    border-radius: 3px;
 }
 
 .a-git {
@@ -100,6 +101,7 @@ h1 {
     height: 50px;
     background-color: #193157;
     color: antiquewhite;
+    border-radius: 3px;
     font-size: 18pt;
 }
 
