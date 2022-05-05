@@ -8,6 +8,11 @@
     src: url('/font/HarmonyOS/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf');
 }
 
+button {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(76, 76, 76);
+}
+
 .supcache-background {
     margin: 0;
     width: 100%;
@@ -32,13 +37,40 @@
 }
 
 .left-learn-item {
-    height: 40px;
-    margin: 10px 5px 10px 2px;
+    height: 50px;
+    margin: 10px 5px;
+    padding: 0;
+    vertical-align: middle;
 }
 
-button {
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgb(76, 76, 76);
+.left-learn-item-head {
+    width: 320px;
+    height: 40px;
+    margin: 5px 3px;
+    box-sizing: border-box;
+    float: left;
+    align-items: center;
+}
+
+.left-learn-item-acwing {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+
+.left-learn-item-acwing-image {
+    width: 40px;
+    margin: 6px auto;
+}
+
+.left-learn-item-right-entertain {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
 }
 
 .btn-Git {
@@ -51,21 +83,6 @@ button {
     border-radius: 3px;
     position: relative;
     bottom: 3px;
-}
-
-.span-AcWing {
-    width: 40px;
-    height: 40px;
-}
-
-.logo-AcWing {
-    width: 40px;
-    vertical-align: middle;
-    position: relative;
-    bottom: 4px;
-    border: #E7B21E 3px solid;
-    border-radius: 50%;
-    box-sizing: border-box;
 }
 
 .hover-big:hover {
@@ -234,4 +251,14 @@ button {
 
 .footer-bottom-icp>a:hover {
     color: rgb(206, 206, 206);
+}
+
+@media(max-width: 768px) {
+    .left-learn-item-right-entertain {
+        display: none;
+    }
+
+    .left-learn-item {
+        transform: scale(0.8);
+    }
 }
