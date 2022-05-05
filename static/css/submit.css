@@ -76,10 +76,11 @@
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0);
     box-sizing: content-box;
+    border: 2px solid #E7B21E;
     border-radius: 3px;
     color: #fafafa;
     cursor: pointer;
-    margin-top: 4px;
+    margin: 2px;
 }
 
 .submit-head-btn-home:hover {
