@@ -35,6 +35,8 @@ button {
     text-align: left;
     box-sizing: border-box;
     margin: 0 5px 0 7px;
+    position: relative;
+    top: 60px;
 }
 
 .left-learn-item {
@@ -294,6 +296,10 @@ button {
     }
 
     .backtop {
+        display: none;
+    }
+
+    .all-display {
         display: none;
     }
 }
