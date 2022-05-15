@@ -48,7 +48,7 @@
 }
 
 #container3 {
-    height: 25%;
+    height: 28%;
 }
 
 .submit-body-subject-item {
@@ -147,6 +147,8 @@
     height: 55px;
     background-color: #000;
     border-top: 1px black solid;
+    position: relative;
+    bottom: -9px;
 }
 
 .footer-bottom-copy {
