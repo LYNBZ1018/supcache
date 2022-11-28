@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework</title>
 
-    <link rel="icon" href="/static/images/logo.jpg">
+    <link rel="icon" href="/static/images/icon.png">
     <link rel="stylesheet" href="/static/css/submit.css" type="text/css">
 
     <!--import Bootstrap-->
@@ -19,14 +19,14 @@
     <div id="website-top"></div>
 
     <nav class="navbar fixed-top bg-dark navbar-dark justify-content-center
-    navbar-expand-sm navbar-expand-md navbar-expand-lg">
+        navbar-expand-sm navbar-expand-md navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <img src="/static/images/touxiang.jpg" alt="Logo" style="width:40px;">
         </a>
         <ul class="nav navbar-nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="/index.html">
-                    Home
+                    <span class="glyphicon glyphicon-home"></span> Home
                 </a>
             </li>
             <span class="all-display navbar-text">
@@ -41,7 +41,15 @@
                 |
             </span>
             <li class="nav-item">
-                <a class="nav-link" href="/sharewall.html">
+                <a class="nav-link" href="../sup_game/kof/templates/index.html">
+                    SupGame
+                </a>
+            </li>
+            <span class="all-display navbar-text">
+                |
+            </span>
+            <li class="nav-item">
+                <a class="nav-link" href="/templates/sharewall.html">
                     Share Wall
                 </a>
             </li>
@@ -49,8 +57,16 @@
                 |
             </span>
             <li class="nav-item">
-                <a class="nav-link" href="/updatelog.html">
+                <a class="nav-link" href="/templates/updatelog.html">
                     Update Log
+                </a>
+            </li>
+            <span class="all-display navbar-text">
+                |
+            </span>
+            <li class="nav-item">
+                <a class="nav-link" href="/templates/interview.html">
+                    Interview
                 </a>
             </li>
         </ul>
@@ -77,30 +93,30 @@
     <div class="submit-body">
 
         <!-- container1 -->
-        <div class="submit-body-subject container">
+        <div id="container1" class="submit-body-subject container" style="display: none;">
 
             <!--r2-->
             <div id="r1" class="row">
-                <div id="r1c1" class="submit-body-subject-item col" style="padding: 0 8px;">
-                    软件工程
+                <div id="r1c1" class="submit-body-subject-item col" style="padding: 0 8px; display:;">
+
                 </div>
             </div>
 
             <!--r2-->
-            <div id="r2" class="submit-body-subject-item-sub row row-item" style="margin: 10px 0;">
+            <div id="r2" class="submit-body-subject-item-sub row row-item" style="margin: 10px 0; display: ;">
                 <div id="r2c1" class="col col-item col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">实验五</div>
-                    <a target="_blank" href="https://wss.pet/s/8afbqggn0st">
+                    <div class="submit-body-subject-text">论文</div>
+                    <a target="_blank" href="https://wss.pet/s/9dh2wpfph3b">
                         <button class="submit-body-subject-button">submit</button>
                     </a>
                 </div>
 
-                <div id="r2c2" class="col col-item col-12 col-md-4" style="padding: 0 8px">
+                <div id="r2c2" class="col col-item col-12 col-md-4" style="padding: 0 8px; display:;">
                     <span class=" submit-body-subject-info submit-body-subject-info-item1">
                         截止时间:
                     </span>
                     <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月17日(周二)24:00
+                        2022.09.27 周二
                     </sapn>
                 </div>
 
@@ -118,7 +134,7 @@
                 <script>
                     function getTime1() {
                         var now_date = new Date();
-                        var aim_date = new Date("2022-05-17 24:00:00");
+                        var aim_date = new Date("2022-09-27 24:00:00");
 
                         var difftime = (aim_date - now_date) / 1000;
 
@@ -131,7 +147,115 @@
                     }
 
                     setInterval(function () {
-                        document.querySelector('.time1').innerHTML = getTime1();
+                        document.querySelector('.').innerHTML = getTime1();
+                    }, 1000)
+                </script>
+            </div>
+
+            <!--r9-->
+            <div id="r9" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
+                <div id="r9c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
+                    <div class="submit-body-subject-text">
+                        实验7
+                    </div>
+
+                    <a target="_blank" href="https://wss.pet/s/8g6tgp52cb1">
+                        <button class="submit-body-subject-button">submit</button>
+                    </a>
+
+                </div>
+
+                <div id="r9c2" class="col col-12 col-md-4" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-item1">
+                        截止时间
+                    </span>
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
+
+                    </sapn>
+                </div>
+
+                <div id="r9c3" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-tips">
+
+                    </span>
+                </div>
+
+                <div id="r9c4" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info time7 submit-body-subject-info-remindtime"></span>
+                </div>
+
+
+                <script>
+                    function getTime7() {
+                        var now_date = new Date();
+                        var aim_date = new Date("2022-06-10 24:00:00");
+
+                        var difftime = (aim_date - now_date) / 1000;
+
+                        var days = parseInt(difftime / 86400);
+                        var hours = parseInt(difftime / 3600) - 24 * days;
+                        var minutes = parseInt(difftime % 3600 / 60);
+                        var seconds = parseInt(difftime % 60);
+
+                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
+                    }
+
+                    setInterval(function () {  /*添加类名字 .time7*/
+                        document.querySelector('.').innerHTML = getTime7();
+                    }, 1000)
+                </script>
+            </div>
+
+            <!--r10-->
+            <div id="r10" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
+                <div id="r10c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
+                    <div class="submit-body-subject-text">
+                        实验8
+                    </div>
+
+                    <a target="_blank" href="https://wss.pet/s/8k5xmfwui8d">
+                        <button class="submit-body-subject-button">submit</button>
+                    </a>
+
+                </div>
+
+                <div id="r10c2" class="col col-12 col-md-4" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-item1">
+                        截止时间
+                    </span>
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
+
+                    </sapn>
+                </div>
+
+                <div id="r10c3" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-tips">
+
+                    </span>
+                </div>
+
+                <div id="r10c4" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info time8 submit-body-subject-info-remindtime"></span>
+                </div>
+
+
+                <script>
+                    function getTime8() {
+                        var now_date = new Date();
+                        var aim_date = new Date("2022-05-21 18:00:00");
+
+                        var difftime = (aim_date - now_date) / 1000;
+
+                        var days = parseInt(difftime / 86400);
+                        var hours = parseInt(difftime / 3600) - 24 * days;
+                        var minutes = parseInt(difftime % 3600 / 60);
+                        var seconds = parseInt(difftime % 60);
+
+                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
+                    }
+
+                    setInterval(function () {  /*添加类名字 .time7*/
+                        document.querySelector('').innerHTML = getTime8();
                     }, 1000)
                 </script>
             </div>
@@ -139,10 +263,10 @@
             <hr style="margin: 1px;">
 
             <!--r3-->
-            <div id="r3" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
+            <div id="r3" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none">
                 <div id="r3c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">作业9</div>
-                    <a target="_blank" href="https://wss.pet/s/8bh9a859mp9">
+                    <div class="submit-body-subject-text">作业6</div>
+                    <a target="_blank" href="https://www.wenshushu.cn/s/8k5wdooc8x9">
                         <button class="submit-body-subject-button">submit</button>
                     </a>
                 </div>
@@ -152,13 +276,13 @@
                         截止时间:
                     </span>
                     <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月21日(周六)24:00
+
                     </sapn>
                 </div>
 
                 <div id="r3c3" class="col col-12 col-md-3" style="padding: 0 8px">
                     <span class="submit-body-subject-info submit-body-subject-info-tips">
-                        tips: (第四九章课后作业)
+                        tips: (第六章课后作业)
                     </span>
                 </div>
 
@@ -169,7 +293,7 @@
                 <script>
                     function getTime2() {
                         var now_date = new Date();
-                        var aim_date = new Date("2022-05-21 24:00:00");
+                        var aim_date = new Date("2022-06-06 24:00:00");
 
                         var difftime = (aim_date - now_date) / 1000;
 
@@ -182,14 +306,69 @@
                     }
 
                     setInterval(function () {
-                        document.querySelector('.time2').innerHTML = getTime2();
+                        document.querySelector('.').innerHTML = getTime2();
                     }, 1000)
                 </script>
             </div>
+
+            <!--r8-->
+            <div id="r8" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
+                <div id="r8c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
+                    <div class="submit-body-subject-text">
+                        作业11
+                    </div>
+
+                    <a target="_blank" href="https://www.wenshushu.cn/s/8k5ze0pt0pj">
+                        <button class="submit-body-subject-button">submit</button>
+                    </a>
+
+                </div>
+
+                <div id="r8c2" class="col col-12 col-md-4" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-item1">
+                        截止时间
+                    </span>
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
+
+                    </sapn>
+                </div>
+
+                <div id="r8c3" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-tips">
+                        tips: (第十一章课后作业)
+                    </span>
+                </div>
+
+                <div id="r8c4" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info time6 submit-body-subject-info-remindtime"></span>
+                </div>
+
+
+                <script>
+                    function getTime6() {
+                        var now_date = new Date();
+                        var aim_date = new Date("2022-05-14 23:00:00");
+
+                        var difftime = (aim_date - now_date) / 1000;
+
+                        var days = parseInt(difftime / 86400);
+                        var hours = parseInt(difftime / 3600) - 24 * days;
+                        var minutes = parseInt(difftime % 3600 / 60);
+                        var seconds = parseInt(difftime % 60);
+
+                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
+                    }
+
+                    setInterval(function () {  /*添加类名字 .time6*/
+                        document.querySelector('.').innerHTML = getTime6();
+                    }, 1000)
+                </script>
+            </div>
+
         </div>
 
         <!-- container2 -->
-        <div class="submit-body-subject container">
+        <div id="container2" class="submit-body-subject container" style="display: none">
 
             <!--r4-->
             <div id="r4" class="row">
@@ -199,7 +378,7 @@
             </div>
 
             <!--r5-->
-            <div id="r5" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
+            <div id="r5" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
                 <div id="r5c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
                     <div class="submit-body-subject-text">实验四</div>
                     <a target="_blank" href="https://wss.pet/s/8b9kb46s2jb">
@@ -212,7 +391,7 @@
                         截止时间:
                     </span>
                     <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月21日(周六)3:00
+                        2022年5月27日(周五)24:00
                     </sapn>
                 </div>
 
@@ -237,7 +416,7 @@
                 <script>
                     function getTime3() {
                         var now_date = new Date();
-                        var aim_date = new Date("2022-05-21 03:00:00");
+                        var aim_date = new Date("2022-05-27 24:00:00");
 
                         var difftime = (aim_date - now_date) / 1000;
 
@@ -258,13 +437,12 @@
             <hr style="margin: 1px;">
 
             <!--r6-->
-            <!--
-            <div id="r6" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
+
+            <div id="r6" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
                 <div id="r6c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">实验二</div>
-                    <a target="_blank" href="https://workspace.jianguoyun.com/inbox/collect/4b8e7a7ee53b4ffb8ee121022faea26c/submit
-            ">
-                        <button class="submit-body-subject-button">submit</button>
+                    <div class="submit-body-subject-text">实验五</div>
+                    <a target="_blank" href="https://wss.pet/s/8g3s8tqvpd9">
+                        <button class="submit-body-subject-button" style="display: ;">submit</button>
                     </a>
                 </div>
 
@@ -272,13 +450,22 @@
                     <span class="submit-body-subject-info submit-body-subject-info-item1">
                         截止时间:
                     </span>
-                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月6日(周五)23:00
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2" style="display:;">
+                        2022年6月5日(周日)24:00
                     </sapn>
                 </div>
 
                 <div id="r6c3" class="col col-12 col-md-3" style="padding: 0 8px">
                     <span class="submit-body-subject-info submit-body-subject-info-tips">
+                        tips: 实验五模板
+                        <a target="_blank"
+                            href="https://gitee.com/lynbz1018/Other/blob/master/report/computer_network/%E5%AE%9E%E9%AA%8C%E4%BA%94%E6%A8%A1%E6%9D%BF.docx">
+                            <button
+                                style="width: 60px; height: 30px;color: white; background-color: #00A1D6; padding: 0; border: 0;"
+                                submit-body-subject-info-tips-button>
+                                Enter
+                            </button>
+                        </a>
                     </span>
                 </div>
 
@@ -286,11 +473,12 @@
                     <span class="submit-body-subject-info time4 submit-body-subject-info-remindtime"></span>
                 </div>
 
+                <hr>
 
                 <script>
                     function getTime4() {
                         var now_date = new Date();
-                        var aim_date = new Date("2022-05-06 23:00:00");
+                        var aim_date = new Date("2022-06-05 24:00:00");
 
                         var difftime = (aim_date - now_date) / 1000;
 
@@ -307,12 +495,133 @@
                     }, 1000)
                 </script>
             </div>
-            -->
+
+            <!--r11-->
+
+            <div id="r11" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
+                <div id="r11c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
+                    <div class="submit-body-subject-text">实验六</div>
+                    <a target="_blank" href="https://wss.pet/s/8iy2rzn1eq5">
+                        <button class="submit-body-subject-button" style="display:;">submit</button>
+                    </a>
+                </div>
+
+                <div id="r11c2" class="col col-12 col-md-4" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-item1">
+                        平台上的实验7:传输控制协议(TCP)
+                    </span>
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2" style="display: none;">
+                        2022年5月6日(周五)23:00
+                    </sapn>
+                </div>
+
+                <div id="r11c3" class="col col-12 col-md-3" style="padding: 0 8px; display: ;">
+                    <span class="submit-body-subject-info submit-body-subject-info-tips">
+                        tips: 实验六模板
+                        <a target="_blank" href="https://gitee.com/lynbz1018/Other/tree/master/report/computer_network"
+                            style="display: ;">
+                            <button
+                                style="width: 60px; height: 30px;color: white; background-color: #00A1D6; padding: 0; border: 0;"
+                                submit-body-subject-info-tips-button>
+                                Enter
+                            </button>
+                        </a>
+                    </span>
+                </div>
+
+                <div id="r6114" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info time11 submit-body-subject-info-remindtime"></span>
+                </div>
+
+                <hr>
+
+                <script>
+                    function getTime11() {
+                        var now_date = new Date();
+                        var aim_date = new Date("2022-05-06 23:00:00");
+
+                        var difftime = (aim_date - now_date) / 1000;
+
+                        var days = parseInt(difftime / 86400);
+                        var hours = parseInt(difftime / 3600) - 24 * days;
+                        var minutes = parseInt(difftime % 3600 / 60);
+                        var seconds = parseInt(difftime % 60);
+
+                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
+                    }
+
+                    setInterval(function () {
+                        document.querySelector('.').innerHTML = getTime4();
+                    }, 1000)
+                </script>
+            </div>
+
+
+            <!--r12-->
+
+            <div id="r12" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
+                <div id="r12c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
+                    <div class="submit-body-subject-text">实验七</div>
+                    <a target="_blank" href="https://wss.pet/s/8lcjgrhiqj1">
+                        <button class="submit-body-subject-button" style="display:;">submit</button>
+                    </a>
+                </div>
+
+                <div id="r12c2" class="col col-12 col-md-4" style="padding: 0 8px">
+                    <span class="submit-body-subject-info submit-body-subject-info-item1">
+                        HTTP 超文本传输协议
+                    </span>
+                    <sapn class="submit-body-subject-info submit-body-subject-info-item2" style="display: none;">
+                        2022年5月6日(周五)23:00
+                    </sapn>
+                </div>
+
+                <div id="r12c3" class="col col-12 col-md-3" style="padding: 0 8px; display: ;">
+                    <span class="submit-body-subject-info submit-body-subject-info-tips">
+                        tips: 实验七模板
+                        <a target="_blank" href="https://gitee.com/lynbz1018/Other/tree/master/report/computer_network"
+                            style="display: ;">
+                            <button
+                                style="width: 60px; height: 30px;color: white; background-color: #00A1D6; padding: 0; border: 0;"
+                                submit-body-subject-info-tips-button>
+                                Enter
+                            </button>
+                        </a>
+                    </span>
+                </div>
+
+                <div id="r12c4" class="col col-12 col-md-3" style="padding: 0 8px">
+                    <span class="submit-body-subject-info time11 submit-body-subject-info-remindtime"></span>
+                </div>
+
+                <hr>
+
+                <script>
+                    function getTime11() {
+                        var now_date = new Date();
+                        var aim_date = new Date("2022-05-06 23:00:00");
+
+                        var difftime = (aim_date - now_date) / 1000;
+
+                        var days = parseInt(difftime / 86400);
+                        var hours = parseInt(difftime / 3600) - 24 * days;
+                        var minutes = parseInt(difftime % 3600 / 60);
+                        var seconds = parseInt(difftime % 60);
+
+                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
+                    }
+
+                    setInterval(function () {
+                        document.querySelector('.').innerHTML = getTime4();
+                    }, 1000)
+                </script>
+            </div>
+
 
         </div>
 
         <!--container3-->
-        <div id="container3" class="submit-body-subject container">
+        <div id="container3" class="submit-body-subject container" style="display: none;">
 
             <!--r7-->
             <div id="r7" class="row">
@@ -373,167 +682,9 @@
                 </script>
             </div>
 
-            <!--r8-->
-            <div id="r8" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
-                <div id="r8c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">
-                        实验9
-                    </div>
-
-                    <a target="_blank" href="https://wss.pet/s/8a2dj1p4ht9">
-                        <button class="submit-body-subject-button">submit</button>
-                    </a>
-
-                </div>
-
-                <div id="r8c2" class="col col-12 col-md-4" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-item1">
-                        截止时间
-                    </span>
-                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月14日(周六)23:00
-                    </sapn>
-                </div>
-
-                <div id="r8c3" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-tips">
-                        tips: 交一个压缩包
-                    </span>
-                </div>
-
-                <div id="r8c4" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info time6 submit-body-subject-info-remindtime"></span>
-                </div>
 
 
-                <script>
-                    function getTime6() {
-                        var now_date = new Date();
-                        var aim_date = new Date("2022-05-14 23:00:00");
 
-                        var difftime = (aim_date - now_date) / 1000;
-
-                        var days = parseInt(difftime / 86400);
-                        var hours = parseInt(difftime / 3600) - 24 * days;
-                        var minutes = parseInt(difftime % 3600 / 60);
-                        var seconds = parseInt(difftime % 60);
-
-                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
-                    }
-
-                    setInterval(function () {  /*添加类名字 .time6*/
-                        document.querySelector('.').innerHTML = getTime6();
-                    }, 1000)
-                </script>
-            </div>
-
-            <!--r9-->
-            <div id="r9" class="submit-body-subject-item-sub row" style="margin: 10px 0; display: none;">
-                <div id="r9c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">
-                        课上实验
-                    </div>
-
-                    <a target="_blank" href="https://wss.pet/s/8a2f91ceuvh">
-                        <button class="submit-body-subject-button">submit</button>
-                    </a>
-
-                </div>
-
-                <div id="r9c2" class="col col-12 col-md-4" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-item1">
-                        截止时间
-                    </span>
-                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月14日(周六)23:00
-                    </sapn>
-                </div>
-
-                <div id="r9c3" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-tips">
-                        tips: 交一个压缩包
-                    </span>
-                </div>
-
-                <div id="r9c4" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info time7 submit-body-subject-info-remindtime"></span>
-                </div>
-
-
-                <script>
-                    function getTime7() {
-                        var now_date = new Date();
-                        var aim_date = new Date("2022-05-14 23:00:00");
-
-                        var difftime = (aim_date - now_date) / 1000;
-
-                        var days = parseInt(difftime / 86400);
-                        var hours = parseInt(difftime / 3600) - 24 * days;
-                        var minutes = parseInt(difftime % 3600 / 60);
-                        var seconds = parseInt(difftime % 60);
-
-                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
-                    }
-
-                    setInterval(function () {  /*添加类名字 .time7*/
-                        document.querySelector('.').innerHTML = getTime7();
-                    }, 1000)
-                </script>
-            </div>
-
-            <!--r10-->
-            <div id="r10" class="submit-body-subject-item-sub row" style="margin: 10px 0;">
-                <div id="r10c1" class="col col-12 col-md-3 col-lg-2" style="padding: 0 8px">
-                    <div class="submit-body-subject-text">
-                        实验12
-                    </div>
-
-                    <a target="_blank" href="https://wss.pet/s/8bafs9klebx">
-                        <button class="submit-body-subject-button">submit</button>
-                    </a>
-
-                </div>
-
-                <div id="r10c2" class="col col-12 col-md-4" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-item1">
-                        截止时间
-                    </span>
-                    <sapn class="submit-body-subject-info submit-body-subject-info-item2">
-                        2022年5月21日(周六)18:00
-                    </sapn>
-                </div>
-
-                <div id="r10c3" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info submit-body-subject-info-tips">
-                        tips: 交一个压缩包
-                    </span>
-                </div>
-
-                <div id="r10c4" class="col col-12 col-md-3" style="padding: 0 8px">
-                    <span class="submit-body-subject-info time8 submit-body-subject-info-remindtime"></span>
-                </div>
-
-
-                <script>
-                    function getTime8() {
-                        var now_date = new Date();
-                        var aim_date = new Date("2022-05-21 18:00:00");
-
-                        var difftime = (aim_date - now_date) / 1000;
-
-                        var days = parseInt(difftime / 86400);
-                        var hours = parseInt(difftime / 3600) - 24 * days;
-                        var minutes = parseInt(difftime % 3600 / 60);
-                        var seconds = parseInt(difftime % 60);
-
-                        return "剩余: " + days + "天" + hours + "小时" + minutes + "分";
-                    }
-
-                    setInterval(function () {  /*添加类名字 .time7*/
-                        document.querySelector('.time8').innerHTML = getTime8();
-                    }, 1000)
-                </script>
-            </div>
 
         </div>
     </div>
